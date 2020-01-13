@@ -1,0 +1,42 @@
+.document {
+
+    nav {
+        display:inline-block;
+        width: 100%;
+        line-height: 1.0;
+        font-size: 14px;
+        margin: 0px;
+        ol {
+            margin: 0px;
+            list-style-type: none;
+            
+            .page {
+                display: inline-block;
+            }
+
+            .next {
+                float: right;
+            }
+
+        }
+    }
+
+    .doc-title {
+        text-align: right;
+        width: 100%;
+        text-transform: capitalize;
+        color: $mid-grey;
+    }
+}
+  
+@media screen and (max-width: $header-bp - 1) { // 1019px
+    // replace desktop nav with mobile nav
+    .document {
+
+        nav {
+                .next {
+                    float: none;
+                }
+            }
+        }
+}

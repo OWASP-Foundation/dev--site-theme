@@ -1,1 +1,1 @@
-dev site
+# Used for locally running theme

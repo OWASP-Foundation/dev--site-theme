@@ -1,0 +1,22 @@
+- title: HOME
+  url: /
+- title: SUBMIT
+  items:
+    - title: Call for Papers
+      url : /www--site-theme/event-example
+    - title: Call For Training
+      url : /www--site-theme/event-example
+- title: SPONSOR
+  items:
+    - title: Opportunities
+      url  : /www--site-theme/event-example
+- title: VENUE
+  items:
+    - title: About
+      url  : /www--site-theme/event-example
+- title: ABOUT
+  items:
+    - title: Team
+      url  : /www--site-theme/event-example
+    - title: Code of Conduct
+      url  : /www--site-theme/event-example
