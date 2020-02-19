@@ -15,6 +15,20 @@
   }
 }
 
+.owasp-sidebar-top {
+  padding: 4px;
+  box-shadow: 0 3px 3px -3px gray; 
+  padding-bottom: 25px;
+  font-size: .95em;
+}
+
+.owasp-sidebar-bottom {
+  padding: 4px;
+  box-shadow: 0 -3px 3px -3px gray; 
+  padding-top: 25px;
+  font-size: .95em;
+}
+
 .sub-nav {
   grid-area: menu;
   padding: 15px 0;

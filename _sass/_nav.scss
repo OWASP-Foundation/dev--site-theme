@@ -8,7 +8,7 @@ header, footer, mobile navigation menu
 header {
   margin-bottom: 8px;
   background-color: $bg-grey;
-  box-shadow: 0 2px 3px #e7e7e7;
+  box-shadow: 0 2px 3px #d8d8d8;
 }
 
 .header-wrapper {
@@ -99,9 +99,10 @@ header {
   z-index: 99;
 
   li {
-    padding: 5px 20px;
+    display: block;
     background-color: $bg-blue;
     color: white;
+
     &:first-child {
       margin-top: 10px;
     }
@@ -117,6 +118,10 @@ header {
     a, a:active, a:focus, a:hover, a:visited {
       color:white;
       text-decoration: none;
+    }
+    a {
+      display: block;    
+      padding: 5px 20px;
     }
   }
   // pseudo class for triangle shape tip
@@ -194,7 +199,7 @@ header {
   background-color: $bg-blue;
   box-shadow: 2px 0 10px #000000;
   li {
-    padding: 12px 15px;
+    display: block;
     font-size: 14px;
     &.separator {
       border-top: 3px solid lighten($bg-blue, 15%);
@@ -204,6 +209,8 @@ header {
     width: 100%;
   }
   a {
+    padding: 12px 15px;
+    display: block;
     color: white;
     text-decoration: none;
   }
@@ -291,7 +298,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0 auto;
+      margin: 5 auto;
     }
   }
 }
@@ -302,7 +309,7 @@ header {
   .member-wrapper,
   .footer-wrapper {
     & > * {
-      margin: 0 0;
+      margin: 5 0;
     }
   }
 }
