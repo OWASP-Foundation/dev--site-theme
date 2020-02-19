@@ -27,3 +27,10 @@ Interested in a ZAP talk or training event? See the talks tab. Not one near you?
 <h4>An H4 Tag</h4>
 <h5>An H5 Tag</h5>
 <h6>An H6 Tag</h6>
+
+
+<i class="fa fab-slack" style="width:50px;height:50px;"></i>
+<i class="fa fab-facebook-square"></i>
+<i class="fa fab-twitter"></i>
+<i class="fa fab-linkedin"></i>
+<i class="fa fab-youtube-square"></i>
