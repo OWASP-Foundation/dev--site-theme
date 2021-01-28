@@ -1,6 +1,6 @@
 {
 	"menus": [{
-			"title": "PROJECTS",
+			"title": "projects",
 			"url": "/projects/",
 			"items": [{
 				"title": "Browse All Projects...",
@@ -44,7 +44,7 @@
 			}]
 		},
 		{
-			"title": "CHAPTERS",
+			"title": "chapters",
 			"url": "/chapters/",
 			"items": [{
 				"title": "Find a Local Chapter...",
@@ -76,7 +76,7 @@
 			}]
 		},
 		{
-			"title": "EVENTS",
+			"title": "events",
 			"url": "/events/",
 			"items": [{
 				"title": "Global AppSec - Dublin, June 15-19, 2020",
@@ -121,7 +121,7 @@
 			]
 		},
 		{
-			"title": "MEMBERSHIP",
+			"title": "members",
 			"url": "/membership/",
 			"items": [{
 				"title": "Yada yada",
@@ -129,7 +129,7 @@
 			}]
 		},
 		{
-			"title": "ABOUT",
+			"title": "about",
 			"url": "/about/",
 			"items": [{
 				"title": "About OWASP",
