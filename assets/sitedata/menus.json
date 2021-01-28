@@ -121,6 +121,14 @@
 			]
 		},
 		{
+			"title": "MEMBERSHIP",
+			"url": "/membership/",
+			"items": [{
+				"title": "Yada yada",
+				"url": "/membership/"
+			}]
+		},
+		{
 			"title": "ABOUT",
 			"url": "/about/",
 			"items": [{
