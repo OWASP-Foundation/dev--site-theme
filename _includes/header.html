@@ -22,7 +22,7 @@
       <!-- jekyll menu stuff -->
       
       <div class="interactive-wrapper">
-        <form role="search" method="get" action="https://owasp.org/search">   
+        <form role="search" method="get" action="https://dev.owasp.org/search">   
           <div class='search-div'>
             <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
             <button id="search-button" type="submit" class="fa fa-search">
@@ -54,7 +54,7 @@
 {% if dev_file.size > 0 %}
 {% assign site_base_url = '/' %}
 {% else %}
-{% assign site_base_url = 'https://owasp.org/dev--site-theme/' %}
+{% assign site_base_url = 'https://dev.owasp.org/' %}
 {% endif %}
 
 <script type="text/javascript">
