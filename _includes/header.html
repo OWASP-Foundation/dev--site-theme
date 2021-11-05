@@ -1,13 +1,13 @@
 <header role="banner">
   {% include banner.html %}
+  {% include pop_up.html %}
   <div class="header-wrapper" aria-label="main navigation">
-
     <nav class="alt-nav">
       <a href="#" class="menu-toggler" aria-hidden="true">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="/" class="alt-logo" aria-label="go to homepage">
-          <img src="/assets/images/logo.png" alt="OWASP logo">
+      <a href="https://owasp.org/" class="alt-logo" aria-label="go to homepage">
+          <img src="https://owasp.org/assets/images/logo.png" alt="OWASP logo">
       </a>
       <div id="overlay" class="remove-el">
 
@@ -16,13 +16,13 @@
     </nav>
     
     <nav class="top-nav" role="navigation" aria-label="primary navigation">
-      <a href="/" class="desktop-logo" aria-label="go to homepage">
-        <img src="/assets/images/logo.png" alt="">
+      <a href="https://owasp.org/" class="desktop-logo" aria-label="go to homepage">
+        <img src="https://owasp.org/assets/images/logo.png" alt="">
       </a>
       <!-- jekyll menu stuff -->
       
       <div class="interactive-wrapper">
-        <form role="search" method="get" action="/search">   
+        <form role="search" method="get" action="https://owasp.org/search">   
           <div class='search-div'>
             <input id="searchString" name="searchString" class="search-bar" type="search" placeholder="Search OWASP.org" required="true">
             <button id="search-button" type="submit" class="fa fa-search">
@@ -37,18 +37,24 @@
         {% else %}
         {% assign pagetitle = '' %}
         {% endif %}
-          <a href="/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
-          <a href="/membership" class="cta-button">Join</a>
+          <a href="https://owasp.org/store" class="cta-button white inset"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Store</a>
+          <a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a>
+          <a href="https://owasp.org/membership" class="cta-button">Join</a>
         </div>
       </div>
     </nav>
+    {% include cookie-disclaimer.html %}
   </div>
-
+  <div class="mobile" style="width:100%;margin:auto;justify-content: space-between;">
+    <div style="float:left;margin:auto;padding-right:10%;"><a href="https://owasp.org/store" class="cta-button white inset"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Store</a></div>
+    <div style="float:left;margin:auto;padding-right:10%;"><a href="https://owasp.org/donate?reponame={{ site.github.repository_name }}{{ pagetitle }}" class="cta-button green">Donate</a></div>
+    <div style="float:left;margin:auto;"><a href="https://owasp.org/membership" class="cta-button">Join</a></div>
+  </div>
 {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
 {% if dev_file.size > 0 %}
 {% assign site_base_url = '/' %}
 {% else %}
-{% assign site_base_url = 'https://dev.owasp.org/dev--site-theme/' %}
+{% assign site_base_url = 'https://owasp.org/dev--site-theme/' %}
 {% endif %}
 
 <script type="text/javascript">
@@ -69,10 +75,10 @@
 
           mlistr += "<li><a href='#' class='menu-toggler' aria-hidden='true'><i class='fa fa-times'></i></a></li>";
           mlistr += "<li>";
-          mlistr += "<form role='search' method='get' action='/search'>";   
+          mlistr += "<form role='search' method='get' action='https://owasp.org/search'>";   
           mlistr += "<div class='search-div'>";
-          mlistr += "<input id='searchString' name='searchString' class='search-bar' type='search' placeholder='Search OWASP.org' required='true'>";
-          mlistr += "<button id='search-button' type='submit' class='fa fa-search' style='padding-left: 8px;'></button></div></form>";
+          mlistr += "<input id='searchString' aria-label='search input' name='searchString' class='search-bar' type='search' placeholder='Search OWASP.org' required='true'>";
+          mlistr += "<button id='search-button' aria-label='search button' type='submit' class='fa fa-search' style='padding-left: 8px;'></button></div></form>";
           mlistr += "</li>";
           $.each(data.menus, function (ndx, menu){
               listr += "<li><a href='" + menu.url + "'>" + menu.title + "</a>";
@@ -103,8 +109,8 @@
                   mlistr += "<a href='" + item.url + "'";
                   if(item.opentab)
                   {
-                    listr += " target='_blank' rel='noopener'";
-                    mlistr += " target='_blank' rel='noopener'";
+                    listr += " target='_blank' rel='noopener noreferrer'";
+                    mlistr += " target='_blank' rel='noopener noreferrer'";
                   }
 
                   listr += ">" + item.title + "</a></li>";
@@ -119,9 +125,9 @@
               mlistr += "</li>";
           });
           listr += "</ul>";
-          mlistr += "<li><a href='/donate'>MAKE A DONATION</a></li>";
-          mlistr += "<li><a href='/membership'>BECOME A MEMBER</a></li>";
-          mlistr += "<li><a href='/sitemap'>SITEMAP</a></li>";
+          mlistr += "<li><a href='https://owasp.org/donate'>MAKE A DONATION</a></li>";
+          mlistr += "<li><a href='https://owasp.org/membership'>BECOME A MEMBER</a></li>";
+          mlistr += "<li><a href='https://owasp.org/sitemap'>SITEMAP</a></li>";
           mlistr += "</ul>";
           
           $('.desktop-logo').after(listr);

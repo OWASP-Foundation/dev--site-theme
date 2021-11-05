@@ -1,74 +1,85 @@
 {
 	"menus": [{
-			"title": "projects",
-			"url": "/projects/",
+			"title": "PROJECTS",
+			"url": "https://owasp.org/projects/",
 			"items": [{
 				"title": "Browse All Projects...",
-				"url": "/projects/"
+				"url": "https://owasp.org/projects/"
 			}, {
 				"title": "OWASP Top Ten",
-				"url": "/www-project-top-ten/",
+				"url": "https://owasp.org/www-project-top-ten/",
 				"separator": "true"
 			}, {
-				"title": "Cheat Sheets",
-				"url": "/www-project-cheat-sheets/"
-			},  {
 				"title": "Dependency Track",
-				"url": "/www-project-dependency-track/"
+				"url": "https://owasp.org/www-project-dependency-track/"
 			}, {
 				"title": "Juice Shop",
-				"url": "/www-project-juice-shop/"
+				"url": "https://owasp.org/www-project-juice-shop/"
 			}, {
 				"title": "Mobile Security Testing Guide",
-				"url": "/www-project-mobile-security-testing-guide/"
+				"url": "https://owasp.org/www-project-mobile-security-testing-guide/"
 			}, {
 				"title": "ModSecurity Core Rule Set",
-				"url": "/www-project-modsecurity-core-rule-set/"
+				"url": "https://owasp.org/www-project-modsecurity-core-rule-set/"
 			}, {
 				"title": "Software Assurance Maturity Model (SAMM)",
-				"url": "/www-project-samm/"
+				"url": "https://owasp.org/www-project-samm/"
 			}, {
 				"title": "Security Knowledge Framework",
-				"url": "/www-project-security-knowledge-framework/"
+				"url": "https://owasp.org/www-project-security-knowledge-framework/"
 			}, {
 				"title": "Web Security Testing Guide",
-				"url": "/www-project-web-security-testing-guide/"
+				"url": "https://owasp.org/www-project-web-security-testing-guide/"
 			}, {
 				"title": "Zed Attack Proxy",
-				"url": "/www-project-zap/"
+				"url": "https://owasp.org/www-project-zap/"
 			},{
 				"title": "Start a New Project...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
-				"separator": "true",
-				"opentab": "true"
+				"separator": "true"
+			},{
+				"title": "Google Summer of Code 2021",
+				"url": "https://owasp.org/gsoc/gsoc2021"
 			}]
 		},
 		{
-			"title": "chapters",
-			"url": "/chapters/",
+			"title": "CHAPTERS",
+			"url": "https://owasp.org/chapters/",
 			"items": [{
 				"title": "Find a Local Chapter...",
-				"url": "/chapters/"
+				"url": "https://owasp.org/chapters/"
 			}, {
 				"title": "Africa",
-				"url": "/chapters/#Africa",
+				"url": "https://owasp.org/chapters/#Africa",
 				"separator": "true"
 			}, {
 				"title": "Asia",
-				"url": "/chapters/#Asia"
+				"url": "https://owasp.org/chapters/#Asia"
 			}, {
-				"title": "Oceania",
-				"url": "/chapters/#Oceania"
-			}, {
-				"title": "Europe",
-				"url": "/chapters/#Europe"
-			}, {
+				"title": "Central America",
+				"url": "https://owasp.org/chapters/#CentralAmerica"
+			},{
+				"title": "Eastern Europe",
+				"url": "https://owasp.org/chapters/#EasternEurope"
+			},{
+				"title": "European Union",
+				"url": "https://owasp.org/chapters/#EuropeanUnion"
+			},{
+				"title": "Middle East",
+				"url": "https://owasp.org/chapters/#MiddleEast"
+			},{
 				"title": "North America",
-				"url": "/chapters/#NorthAmerica"
-			}, {
+				"url": "https://owasp.org/chapters/#NorthAmerica"
+			},{
+				"title": "Oceania",
+				"url": "https://owasp.org/chapters/#Oceania"
+			},{
 				"title": "South America",
-				"url": "/chapters/#SouthAmerica"
-			}, {
+				"url": "https://owasp.org/chapters/#SouthAmerica"
+			},{
+				"title": "The Caribbean",
+				"url": "https://owasp.org/chapters/#TheCarribean"
+			},{
 				"title": "Start a Local Chapter...",
 				"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/73?src=-1419759666",
 				"separator": "true",
@@ -76,103 +87,96 @@
 			}]
 		},
 		{
-			"title": "events",
+			"title": "EVENTS",
 			"url": "/events/",
-			"items": [{
-				"title": "Global AppSec - Dublin, June 15-19, 2020",
-				"url": "https://dublin.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
+			"items": [
+				{ "title": "OWASP 20th Anniversary",
+				  "url": "https://20thanniversary.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "OWASP Virtual Trainings",
+				  "url": "https://training.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Lightning Conference",
+				  "url": "https://lightning.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Brain Break",
+				  "url": "https://brainbreak.owasp.org/",
+				 "opentab": "true"
+				},
+				{ "title": "Call to Battle",
+				  "url": "https://calltobattle.owasp.org/",
+				 "opentab": "true"
+				},
+				{
+				"title": "Upcoming Chapter Events",
+				"url": "https://owasp.org/chapters/events/"
 			}, {
-				"title": "Global AppSec - San Francisco, October 19-23, 2020",
-				"url": "https://sf.globalappsec.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Projects Summit - Winter, February 27-29, 2020",
-				"url": "/www-staff/projects/202002-Projects-Summit-Q1?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Seaside, Panjim Goa, India, March 3-5, 2020",
-				"url": "https://www.owaspseasides.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP SnowFROC, March 5, 2020",
-				"url": "https://www.snowfroc.com/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP Projects Summit - Summer, July 30 - August 2, 2020",
-				"url": "/www-staff/projects/202007-Projects-Summit-Q3?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none"
-			},{
-				"title": "DEFCON 28, August 6-9, 2020",
-				"url": "https://defcon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "LASCON 2020, October 28-29, 2020",
-				"url": "https://lascon.org/?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
-				"title": "OWASP New Zealand Day 2020, February 19-21, 2020",
-				"url": "https://wiki.owasp.org/index.php/OWASP_New_Zealand_Day_2020?utm_source=owasp-web&utm_medium=main-menu&utm_campaign=none",
-				"opentab": "true"
-			},{
 				"title": "Browse All Events...",
-				"url": "/events/",
+				"url": "https://owasp.org/events/",
 				"separator": "true"
 			}
 			]
 		},
 		{
-			"title": "members",
-			"url": "/membership/",
-			"items": [{
-				"title": "Yada yada",
-				"url": "/membership/"
-			}]
-		},
-		{
-			"title": "about",
-			"url": "/about/",
+			"title": "ABOUT",
+			"url": "https://owasp.org/about/",
 			"items": [{
 				"title": "About OWASP",
-				"url": "/about/"
+				"url": "https://owasp.org/about/"
 			}, {
 				"title": "Board & Staff",
-				"url": "/corporate/"
+				"url": "https://owasp.org/corporate/"
 			}, {
 				"title": "Careers",
-				"url": "/careers/"
+				"url": "https://owasp.org/careers/"
 			},{
 				"title": "Committees",
-				"url"  : "/committees/" 
+				"url"  : "https://owasp.org/committees/" 
 			},{
 				"title": "Contact Us",
-				"url": "/contact/"
+				"url": "https://owasp.org/contact/"
 			}, {
 				"title": "Contributed Content",
-				"url": "/www-community"
+				"url": "https://owasp.org/www-community"
 			},{
 				"title": "Donate",
-				"url": "/donate/"
+				"url": "https://owasp.org/donate/"
 			}, {
 				"title": "Finance",
-				"url": "/finance/"
+				"url": "https://owasp.org/finance/"
+			}, {
+				"title": "Get OWASP Gear",
+				"url": "https://owasp.org/store"
+			},{
+				"title": "Global Board",
+				"url": "https://owasp.org/www-board/"
 			}, {
 				"title": "Governance",
-				"url": "/governance/"
+				"url": "https://owasp.org/governance/"
 			}, {
 				"title": "Membership",
-				"url": "/membership/"
+				"url": "https://owasp.org/membership/"
 			}, {
+				"title": "Membership Portal",
+				"url": "https://members.owasp.org/"
+			},{
 				"title": "Opinions & News",
-				"url": "/news/"
+				"url": "https://owasp.org/news/"
 			}, {
-				"title": "Policies & Procedures",
-				"url": "/www-policy/"
+				"title": "Policies",
+				"url": "https://owasp.org/www-policy/"
 			}, {
-				"title": "Staff Projects",
-				"url": "/www-staff/"
+				"title": "Staff Projects & Procedures",
+				"url": "https://owasp.org/www-staff/"
 			}, {
-				"title": "Supporters",
-				"url": "/supporters/"
+				"title": "Corporate Membership",
+				"url": "https://owasp.org/supporters/"
+			}, {
+				"title": "Corporate Event Sponsorship",
+				"url": "https://owasp.org/corporate-sponsorships"
 			}, {
 				"title": "Video",
 				"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",

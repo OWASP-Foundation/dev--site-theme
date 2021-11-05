@@ -12,86 +12,62 @@ $(function() {
   // use removeEl for hiding elements from EVERYONE
   var hideEl = "hide-el",
       removeEl = "remove-el";
-
   if( Cookies.get('banner-seen') == 'true')
   {
       $("#banner").hide();
   }
   
+  if( Cookies.get('popup-seen')=='true')
+  {
+    $("#popup").hide();
+  }
+
   // close announcement banner
   $("#close-banner").click(function() {
     $(this).closest("#banner").remove();
-    Cookies.set('banner-seen', 'true', { expires: 7 });
+      Cookies.set('banner-seen', 'true', { expires: 7 });
+  });
+  
+  $("#close-popup").click(function() {
+    $(this).closest("#popup").remove();
+      Cookies.set('popup-seen', 'true', { expires: 7 });
   });
 
-  // show and focus on search bar
-  // $("#search-icon").click(function() {
-  //   $(".search-bar").animate({
-  //     width: 'show'
-  //   }, 200);
-  //   $(".search-bar").focus();
-  // });
-
-  // $(".search-bar").focusout(function() {
-  //   $(".search-bar").animate({
-  //     width: 'hide'
-  //   }, 200);
-  // });
-
-  // toggle mobile menu display
-  // $(".menu-toggler").click(function() {
-  //   $(".mobile-menu").toggleClass(hideEl);
-  //   $("#overlay").toggleClass(removeEl);
-  // });
-
-  // give first tab in sub-menu a current class by default
-  //$(".sub-nav li:first-child>a").addClass("current");
-
-  // detect hash ID and load corresponding tab
-  /*
-  if (window.location.hash != "") {
-    var pageTab = window.location.hash;
-    $(".tab-link").removeClass("current");
-    $(pageTab+"-link").addClass("current");
-    //$(".sub-nav").siblings(".tab").addClass(removeEl);
-    //$(pageTab).toggleClass(removeEl);
-    //$(window).one('scroll', function() {
-    //    window.scrollTo(0, 0);
-    //})
+  if( Cookies.get('cookies-ok') == 'true')
+  {
+      $("#disclaimer-container").remove();
   }
-  */
- 
-  // show and hide tabs based on sub-menu item clicked
-  /*
-    $(".tab-link").click(function(e) {
-    
-    var x = window.pageXOffset,
-        y = window.pageYOffset;
-    $(".tab-link").removeClass("current");
-    $("#"+this.id).addClass("current");
-    //$(".sub-nav").siblings(".tab").addClass(removeEl);
-    //$("#" + (this.id.replace("-link",""))).toggleClass(removeEl);
-    window.location.hash = $(this).attr("id").replace("-link","");
-    //$(window).one('scroll', function() {
-    //    window.scrollTo(x, y);
-    //})
+  else{
+    $("#disclaimer-container").css('opacity', '1');
+  }
+  
+  // close announcement banner
+  $("#close-disclaimer").click(function() {
+    $(this).closest("#disclaimer-container").remove();
   });
-  */
-  // show dropdown
-  /*$(".top-nav > ul li").hover(function() {
-  
-    $(this).children(".dropdown-menu").toggleClass(hideEl);
-  });*/
-  
+
+  $(".disclaimerOK").click(function () {
+    $(this).closest("#disclaimer-container").remove();
+    Cookies.set('cookies-ok', 'true', { expires: 365 });
+    // does ga still exist here?
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ analytics }}', 'auto');
+    ga('send', 'pageview');
+  });
+
+  if($(location).attr('href').indexOf('owaps.org') >= 0)
+  {
+    $(location).attr('href','https://owasp.org/');
+  }
 });
 
 // browser version checker and notifier
 // source: https://browser-update.org
-var $buoop = {required:{e:-1,f:-3,o:-3,s:-1,c:-3},insecure:true,reminder:0,api:2019.07 }; 
-function $buo_f(){ 
- var e = document.createElement("script"); 
- e.src = "//browser-update.org/update.min.js"; 
- document.body.appendChild(e);
-};
-try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-catch(e){window.attachEvent("onload", $buo_f)}
+// var $buoop = {required:{e:-1,f:-3,o:-3,s:-1,c:-3},insecure:true,reminder:0,api:2019.07 }; 
+// function $buo_f(){ 
+//  var e = document.createElement("script"); 
+//  e.src = "//browser-update.org/update.min.js"; 
+//  document.body.appendChild(e);
+// };
+// try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+// catch(e){window.attachEvent("onload", $buo_f)}

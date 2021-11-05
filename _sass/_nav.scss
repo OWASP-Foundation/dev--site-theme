@@ -38,6 +38,7 @@ header {
   border: 2px solid #dddddd;
   padding: 6px;
   border-radius: 0;
+  padding-right: 25px;
   &:focus {
     border-color: $cta-blue;
   }
@@ -50,9 +51,11 @@ header {
   border:none;
   background:transparent;
   color: $cta-blue;
-  font-size:1em;
+  font-size:.7em;
   padding-right:16px;
   padding-left:0px;
+  margin-left: -25px;
+  margin-top: 12px;
   &:hover {
     color: lighten($cta-blue, 10%);
   }
@@ -89,6 +92,7 @@ header {
   .nav-button > * + * {
     margin-left: 10px;
   }
+  
 }
 
 .dropdown-menu {
@@ -140,6 +144,10 @@ header {
   }
 }
 
+.top-nav ul {
+  font-size: 15px;
+}
+
 /* Hide Dropdowns by Default */
 
 .top-nav ul ul {
@@ -161,9 +169,9 @@ header {
 }
 
 .footer-wrapper {
-  margin: 30px 0;
   .disclaimer {
     margin-top: 15px;
+    font-size: 14px;
   }
 }
 
@@ -301,12 +309,17 @@ header {
       margin: 5 auto;
     }
   }
+
+  .social {
+    float: none;
+  }
 }
 
 @media screen and (max-width: $content-bp) {
   .main-wrapper,
   .header-wrapper,
   .member-wrapper,
+  .alt-member-wrapper,
   .footer-wrapper {
     & > * {
       margin: 5 0;
