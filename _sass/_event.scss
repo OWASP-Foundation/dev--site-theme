@@ -312,7 +312,18 @@
 	}
   }
 
-
+  .event-image-container-x {
+	background-position: center center;
+	background-repeat: repeat-y, no-repeat;
+	background-size: cover, cover;
+	justify-content: space-around;
+	max-width: 100%;
+	text-align:center;
+	hr {
+		max-width: 33%;
+		margin-left: 33%;
+	}
+  }
 
 .alt-wrapper {
 	display: inline-block;
